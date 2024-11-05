@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+      }
+      .container .sub-container {
+        width: 30%;
+        height: 300px;
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        overflow: hidden;
+      }
+      .container .sub-container img {
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease-in-out;
+      }
+      .container .sub-container:hover img {
+        transform: scale(1.2);
+      }
+      .container .sub-container::after {
+        content: "Fresh Fruits " attr(url) ".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: collapse;
+        transform: scale(0);
+        background-color: rgba(63, 59, 59, 0.8);
+        width: 100%;
+        height: 100%;
+        color: aliceblue;
+        text-align: center;
+        line-height: 300px;
+        transition: all 1s ease-in-out;
+      }
+      .container .sub-container:hover::after {
+        visibility: visible;
+        transform: scale(0.8);
+      }
+      .container .big {
+        width: 60%;
+        height: 600px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gallery</h1>
+      <div class="sub-container big" url="https://www.google.com/">
+        <img src="./jsw1.jpeg" alt="Grapes" />
+      </div>
+      <div class="sub-container">
+        <img src="./health2.jpg" alt="" />
+      </div>
+      <div class="sub-container">
+        <img src="./img/galery (3).jpg" alt="" />
+      </div>
+      <div class="sub-container">
+        <img src="./img/galery (4).jpg" alt="" />
+      </div>
+      <div class="sub-container">
+        <img src="./img/galery (5).jpg" alt="" />
+      </div>
+      <div class="sub-container">
+        <img src="./img/galery (6).jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+.container {
+  width: 80%;
+  margin: auto;
+
+  background-color: white;
+}
+.container .sub-container {
+  width: 30%;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+}
+.container .sub-container img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  
+}
+.container .sub-container:hover img {
+  transform: scale(1.2);
+}
+.container .sub-container::after {
+  content:"hi"; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: collapse;
+  transform: scale(0);
+  background-color: rgba(63, 59, 59, 0.8); 
+  width: 100%;
+  height: 100%;
+  color: aliceblue;
+  text-align: center;
+  line-height: 300px;
+  transition: all 1s ease-in-out;
+}
+.container .sub-container:hover::after {
+  visibility: visible;
+  transform: scale(0.8);
+  color: aliceblue;
+  text-decoration: none;
+}
+.container .big {
+  width: 700px;
+  height: 200px;
+  float: left;
+}
+.link-container{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  visibility:hidden;
+}
+
+.container.sub-container:hover.link-container{
+  visibility: visible;
+}
+
+.link-container a{
+  color: aliceblue;
+  font-size: 24px;
+  text-decoration: none;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&amp;family=Oswald:wght@400;500&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="White">
+  <div class="top">
+      <div class="options">
+       <span><b><a href="#home"> Research</a> </span></b>
+       <span><b><a href="#profile">Products</a></span></b>
+       <span><b><a href="#blog">Safety</a></span></div><b>
+        </div>
+  
+ <div class="hello">
+  
+     <br><br><p class="hello1">Introducing AI Avengers</p>
+     <h2><b><p class="textbelowhello">November 14, 2024  </p></b></h2>
+ </div>
+ 
+<div class="content1">
+<div class="c1"> We are excited to introduce AI Avengers to get users’ feedback and learn about its strengths and weaknesses. </div>
+<div class="window">
+<div class="reel">
+  <img src="slider/jsw1.jpeg" alt="">
+  <img src="slider/health2.jpg" alt="">
+  <img src="slider/career1.jpg" alt="">
+</div>
+<div class="text">
+  <p class="p1">Try</p>
+  <h1>AI AVENGERS</h1>
+  <p class="p1">2024</p> 
+</div>
+</div>

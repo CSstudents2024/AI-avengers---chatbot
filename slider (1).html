@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *{
+            margin: 50;
+            padding: 100;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .window{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+            overflow: hidden;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        .reel{
+            width: 400%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            animation: slide 20s infinite;
+        }
+        .reel img{
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+        .text{
+            width: 60%;
+            height: 80%;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            background-color: rgba(96, 96, 155, 0.6);
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+        }
+        .text .p1{
+            color: white;
+            font-size: 50px;
+        }
+        .text .h1{
+            font-size: 50px;
+        }
+        
+        @keyframes slide {
+            0% {left: 0;}
+            20%{left: 0;}
+            33%{left: -100%;}
+            53%{left: -100%;}
+            66%{left: -200%;}
+            86%{left: -200%;}
+            100%{left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="reel">
+            <img src="slider/jsw1.jpeg" alt="">
+            <img src="slider/health2.jpg" alt="">
+            <img src="slider/career1.jpg" alt="">
+        </div>
+        <div class="text">
+            <p class="p1">Try</p>
+            <h1>AI AVENGERS</h1>
+            <p class="p1">2024</p>
+        </div>
+    </div>
+</body>
+</html>

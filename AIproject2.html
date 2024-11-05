@@ -18,6 +18,7 @@
             position: relative;
             left: 0;
             top: 0;
+            
         }
         .reel{
             width: 400%; 
@@ -27,12 +28,14 @@
             top: 0;
             animation: slide 10s infinite;
             background-color: white;
+            
         }
         .reel img{
             width: 25%;
             height: 100%;
             float: left;
             background-color: white;
+            padding-bottom: 100px;
         }
         .text{
             width: 60%;
@@ -65,7 +68,7 @@
 
 
     body{
-        background-image: url('Images/Img 2.png');
+        background-image: url('./Img 2.png');
         background-repeat: no-repeat;
         background-size:cover;
         background-size: 100%;
@@ -123,7 +126,7 @@
         text-align: center;
         
         padding-bottom: 100px;
-        background-image: url("Images/robot hand.avif");
+        background-image: url("./robot\ hand.avif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 550px;
@@ -133,10 +136,14 @@
         
     }
     .textbelowhello{
-        color: white;
-        text-align: center;
+        padding-bottom: 50px;
+        
+      color: white;
     }
-   
+   .hello .h1{
+       font-size: 50px;
+       background-color: white;
+   }
    .content1{
     padding-top: 50px; 
     text-align: center;
@@ -151,7 +158,7 @@
   
    
    .hello1{
-       font-size: 50px;
+       font-size: 30px;
        text-align: center;
        color: white;
    }
@@ -203,6 +210,7 @@ background-color: white;
     padding-right: 20px;
     padding-left: 20px;
     background-color: white;
+    
 }
 .vw{
     padding-right: 75px;
@@ -212,6 +220,9 @@ background-color: white;
 .c1{
     font-size: 25px;
     background-color: white;
+}
+.intro{
+   font-size: 20px; 
 }
 .cppl1{
     display: inline-block;
@@ -242,18 +253,19 @@ background-color: white;
         width: 100%;
         height: 100%;
         transition: all 1s ease-in-out;
+        
       }
       .container .sub-container:hover img {
         transform: scale(1.2);
       }
       .container .sub-container::after {
-        content: "hello";
+        content:"hi"; 
         position: absolute;
         top: 0;
         left: 0;
         visibility: collapse;
         transform: scale(0);
-        background-color: rgba(63, 59, 59, 0.8);
+        background-color: rgba(63, 59, 59, 0.8); 
         width: 100%;
         height: 100%;
         color: aliceblue;
@@ -264,13 +276,31 @@ background-color: white;
       .container .sub-container:hover::after {
         visibility: visible;
         transform: scale(0.8);
+        color: aliceblue;
+        text-decoration: none;
       }
       .container .big {
-        width: 60%;
-        height: 600px;
+        width: 700px;
+        height: 200px;
         float: left;
       }
-    
+      .link-container{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        visibility:hidden;
+      }
+
+      .container.sub-container:hover.link-container{
+        visibility: visible;
+      }
+
+      .link-container a{
+        color: aliceblue;
+        font-size: 24px;
+        text-decoration: none;
+      }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -290,27 +320,29 @@ background-color: white;
            <br><br><p class="hello1">Introducing AI Avengers</p>
            <h2><b><p class="textbelowhello">November 14, 2024  </p></b></h2>
        </div>
-       <div class="window">
-        <div class="reel">
-            <img src="Images/jsw1.jpeg" alt="">
-            <img src="Images/health1.jpg" alt="">
-            <img src="Images/career1.jpg" alt="">
-        </div>
-        <div class="text">
-            <p class="p1">Try</p>
-            <h1>AI AVENGERS</h1>
-            <p class="p1">2024</p> 
-        </div>
-    </div>
+       
 <div class="content1">
- <div class="c1"> We are excited to introduce AI Avengers to get users’ feedback and learn about its strengths and weaknesses. <br><br></div>
+ <div class="c1"> We are excited to introduce AI Avengers to get users’ feedback and learn about its strengths and weaknesses. </div>
+ <div class="window">
+    <div class="reel">
+        <img src="slider/jsw1.jpeg" alt="">
+        <img src="slider/health2.jpg" alt="">
+        <img src="slider/career1.jpg" alt="">
+    </div>
+    <div class="text">
+        <p class="p1">Try</p>
+        <h1>AI AVENGERS</h1>
+        <p class="p1">2024</p> 
+    </div>
+</div>
+ 
 
- <br>AI Avengers is an innovative chatbot designed to bring advanced, intelligent conversation to your fingertips.<br> Built on cutting-edge AI technology, it’s crafted to handle inquiries with speed, accuracy, and a personal touch. <br>
+ <div class="intro"><br>AI Avengers is an innovative chatbot designed to bring advanced, intelligent conversation to your fingertips.<br> Built on cutting-edge AI technology, it’s crafted to handle inquiries with speed, accuracy, and a personal touch. <br></div>
 
 <div class="GIFs">
-<div class="gif1"><span class="gifspan"><img src="Images/gif 1.gif" height="160px" width="160px"></span> <br><br><b><span class="title"> Quick and Accurate Responses</span></b><br> <br> <span class="lorem1"> Delivering timely and relevant answers to user queries,<br> minimizing wait times and improving user satisfaction.<br></span> <br><span class="vw"><a href="#view1">View details</a> </span></div>
-<div class="gif1"><span class="gifspan"><img src="Images/gif 2.gif" height="140px" width="140px"></span><br><b><span class="title">Security and Privacy</span></b><br> <br><span class="lorem1">Ensuring user data is handled securely,</span><br> with compliance to privacy regulations<br> and best practices in data protection.<br><br><span class="vw"><a href="#view1">View details</a> </span></div>
-<div class="gif1"><span class="gifspan"><img src="Images/gif 3.gif" height="140px" width="140px"></span><br><b><span class="title">Human-Like Interaction</span></b> <br><br> <span class="lorem1">Mimicking human conversational</span> <br>  patterns and behaviors to create a<br>more relatable and enjoyable user experience.<br><br><span class="vw"><a href="#view1">View details</a> </span></div>
+<div class="gif1"><span class="gifspan"><img src="./gif 1.gif" height="160px" width="160px"></span> <br><br><b><span class="title"> Quick and Accurate Responses</span></b><br> <br> <span class="lorem1"> Delivering timely and relevant answers to user queries,<br> minimizing wait times and improving user satisfaction.<br></span> <span class="vw"><a href="#view1">View details</a> </span></div>
+<div class="gif1"><span class="gifspan"><img src="./gif 2.gif" height="140px" width="140px"></span><br><b><span class="title">Security and Privacy</span></b><br> <br><span class="lorem1">Ensuring user data is handled securely,</span><br> with compliance to privacy regulations<br> and best practices in data protection.<br><br><span class="vw"><a href="#view1">View details</a> </span></div>
+<div class="gif1"><span class="gifspan"><img src="./gif 3.gif" height="140px" width="140px"></span><br><b><span class="title">Human-Like Interaction</span></b> <br><br> <span class="lorem1">Mimicking human conversational</span> <br>  patterns and behaviors to create a<br>more relatable and enjoyable user experience.<br><br><span class="vw"><a href="#view1">View details</a> </span></div>
 </div>
 
 </div>
@@ -318,19 +350,22 @@ background-color: white;
     
    
     <div class="sub-container">
-      <img src="Images/jsw2.jpg" alt="" />
+      <img src="./jsw2.jpg" alt="" />
+    <div class="link-container">
+        <a href="youtube.com">here</a>
+    </div>
       
     </div>
     <div class="sub-container">
-      <img src="Images/health1.jpg" alt="" />
+      <img src="./health1.jpg" alt="" />
     </div>
     <div class="sub-container">
-      <img src="Images/career1.jpg" alt="" /> 
+      <img src="./career1.jpg" alt="" /> 
     </div>
   
-    
-  </div>
 </div>
 
+</div>
 
 </body></html>
+
